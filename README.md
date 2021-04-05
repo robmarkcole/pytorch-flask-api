@@ -6,11 +6,10 @@ If you'd like to learn how to deploy to Heroku, then check [this repo](https://g
 
 
 ## How to 
-
 Install the dependencies:
-
-    pip install -r requirements.txt
-
+* `python3 -m venv venv`
+* `source venv/bin/activate`
+* `pip install -r requirements.txt`
 
 Run the Flask server:
 
@@ -26,6 +25,13 @@ curl -X POST -F file=@hummingbird.jpg http://localhost:5000/predict
   "class_id": "n01833805", 
   "class_name": "hummingbird"
 }
+```
+
+Run successfully on:
+```
+torch==1.8.1
+torchvision==0.9.1
+Flask==1.1.2
 ```
 
 
